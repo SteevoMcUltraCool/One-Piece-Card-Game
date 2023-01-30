@@ -1,0 +1,84 @@
+html, body { 
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform-style: preserve-3d;
+}
+#background {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transform: translateZ(-10px);
+}
+#background video {
+  height: 100vh;
+}
+video[poster] {
+  object-fit: fill;
+}
+#clickToContinue {
+  position: absolute;
+  top: 10%;
+  transform: translate(0%, -50%);
+  color: #931a0d;
+  text-shadow:    -1px -1px 0px #f1c005,  
+  1px -1px 0px #f1c005,
+  -1px 1px 0px #f1c005,
+   1px 1px 0px #f1c005,
+   0px -1px 0px #f1c005,  
+   1px 0px 0px #f1c005,
+   0px 1px 0px #f1c005,
+    -1px 0px 0px #f1c005;
+  font-size: 40px; 
+  width: 100vw;
+  text-align: center;
+  opacity: 0%;
+  animation: fadeInAndOut 2s ease 1s infinite;
+}
+h1 {
+  margin: 0px 0px;
+  margin-top: 6%;
+  color: #931a0d;
+  text-shadow:    -1px -1px 2px #f1c005,  1px -1px 2px #f1c005, -1px 1px 2px #f1c005,1px 1px 2px #f1c005,0px -1px 2px #f1c005,  
+   1px 0px 2px #f1c005,0px 1px 2px #f1c005,-1px 0px 2px #f1c005;
+  font-size: 80px; 
+  width: 100vw;
+  text-align: center;
+}
+h2 {
+  color: white;
+  margin: 0px 0px;
+  width: 100vw;
+  font-size: 40px;
+  text-align: center;
+  text-shadow:    -1px -1px 0px #100,  1px -1px 0px #100, -1px 1px 0px #100,1px 1px 0px #100, 0px -1px 1px #100,  
+  1px 0px 1px #100, 0px 1px 1px #100,-1px 0px 1px #100;
+}
+#foreground {
+  position: fixed;
+  top: 0px;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+}
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0%;
+    color: #7d160b;
+  }
+  30% {
+    color:#931a0d ;
+  }
+  50% {
+    opacity: 100%;
+    color: #e62a15;
+  }
+  70% {
+    color: #931a0d;
+  }
+  100% {
+    opacity: 0%;
+    color: #7d160b;
+  }
+}
