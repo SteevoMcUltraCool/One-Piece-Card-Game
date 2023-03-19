@@ -7,6 +7,7 @@ window.addEventListener("click", function(){
     if (!initialized){
         initialized = true
         DOM.OP1.play()
+        DOM.OP1.volume = "0.3"
         DOM.CTC.style.animation = "none"
     }
 })
